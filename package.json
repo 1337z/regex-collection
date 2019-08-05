@@ -1,0 +1,32 @@
+{
+  "name": "regex-collection",
+  "version": "0.0.1",
+  "description": "Useful regex patterns",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1337z/regex-collection.git"
+  },
+  "keywords": [
+    "regex",
+    "test",
+    "pattern",
+    "match",
+    "string"
+  ],
+  "author": "MarvinJWendt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1337z/regex-collection/issues"
+  },
+  "homepage": "https://github.com/1337z/regex-collection#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  }
+}
