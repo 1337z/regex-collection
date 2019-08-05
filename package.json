@@ -1,10 +1,10 @@
 {
   "name": "regex-collection",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Useful regex patterns",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tsc && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
