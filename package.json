@@ -4,7 +4,7 @@
   "description": "Useful regex patterns",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tsc && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
