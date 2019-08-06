@@ -34,12 +34,23 @@ export const getHexColor = (text: string) => get(text, hexColor, "ig")
 
 
 
-
+/**
+ * @hidden
+ * @param text Input text
+ * @param regex A valid regex (Can be a variable from this module)
+ * @param flags The flags that will be added to the regex
+ */
 function is(text: string, regex: RegExp, flags: string = "") {
   // console.log(new RegExp("^" + regex.toString() + "$", flags))
   return new RegExp("^" + regex.toString().substring(1, regex.toString().length - 1) + "$", flags).test(text)
 }
 
+/**
+ * @hidden
+ * @param text Input text
+ * @param regex A valid regex (Can be a variable from this module)
+ * @param flags The flags that will be added to the regex
+ */
 function get(text: string, regex: RegExp, flags: string = "") {
   return text.match(new RegExp(regex, flags))
 }
