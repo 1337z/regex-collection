@@ -21,3 +21,7 @@ const search = require('regex-collection')
 ```typescript
 import * as search from 'regex-collection'
 ```
+
+## Supported patterns for:
+- Hex color codes
+- Telephone numbers
