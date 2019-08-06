@@ -1,6 +1,6 @@
 {
   "name": "regex-collection",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Useful regex patterns and functions to test them.",
   "main": "dist/index.js",
   "scripts": {
