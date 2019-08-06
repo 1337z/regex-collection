@@ -2378,10 +2378,25 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-variable">
+			<a href="globals.html#hexcolor" class="tsd-kind-icon">hex<wbr>Color</a>
+		</li>
+		<li class=" tsd-kind-variable">
 			<a href="globals.html#telephonenumber" class="tsd-kind-icon">telephone<wbr>Number</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="globals.html#get" class="tsd-kind-icon">get</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#gethexcolor" class="tsd-kind-icon">get<wbr>Hex<wbr>Color</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#gettelephonenumber" class="tsd-kind-icon">get<wbr>Telephone<wbr>Number</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="globals.html#is" class="tsd-kind-icon">is</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#ishexcolor" class="tsd-kind-icon">is<wbr>Hex<wbr>Color</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#istelephonenumber" class="tsd-kind-icon">is<wbr>Telephone<wbr>Number</a>
@@ -2428,13 +2443,18 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Variables</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-variable"><a href="globals.html#hexcolor" class="tsd-kind-icon">hex<wbr>Color</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#telephonenumber" class="tsd-kind-icon">telephone<wbr>Number</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#get" class="tsd-kind-icon">get</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#gethexcolor" class="tsd-kind-icon">get<wbr>Hex<wbr>Color</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#gettelephonenumber" class="tsd-kind-icon">get<wbr>Telephone<wbr>Number</a></li>
+							<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#is" class="tsd-kind-icon">is</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#ishexcolor" class="tsd-kind-icon">is<wbr>Hex<wbr>Color</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#istelephonenumber" class="tsd-kind-icon">is<wbr>Telephone<wbr>Number</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#modify" class="tsd-kind-icon">modify</a></li>
 						</ul>
@@ -2445,12 +2465,27 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Variables</h2>
 			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="hexcolor" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> hex<wbr>Color</h3>
+				<div class="tsd-signature tsd-kind-icon">hex<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/#?([a-f0-9]{6}|[a-f0-9]{3})/</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L21">index.ts:21</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Matches hex color codes like #fff | #ffffff</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
 				<a name="telephonenumber" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> telephone<wbr>Number</h3>
 				<div class="tsd-signature tsd-kind-icon">telephone<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/8e1ee3b/src/index.ts#L4">index.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L4">index.ts:4</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2462,6 +2497,74 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+				<a name="get" class="tsd-anchor"></a>
+				<h3>get</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, regex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExpMatchArray</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L43">index.ts:43</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>regex: <span class="tsd-signature-type">RegExp</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> flags: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span>
+							<span class="tsd-signature-symbol"> | </span>
+							<span class="tsd-signature-type">RegExpMatchArray</span>
+						</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="gethexcolor" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Hex<wbr>Color</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Hex<wbr>Color<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExpMatchArray</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L33">index.ts:33</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Gets all hex color codes from <em>text</em></p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Input text</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span>
+							<span class="tsd-signature-symbol"> | </span>
+							<span class="tsd-signature-type">RegExpMatchArray</span>
+						</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="gettelephonenumber" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Telephone<wbr>Number</h3>
@@ -2472,7 +2575,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/8e1ee3b/src/index.ts#L16">index.ts:16</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L16">index.ts:16</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2498,6 +2601,68 @@ img {
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+				<a name="is" class="tsd-anchor"></a>
+				<h3>is</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, regex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L38">index.ts:38</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>regex: <span class="tsd-signature-type">RegExp</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> flags: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="ishexcolor" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Hex<wbr>Color</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Hex<wbr>Color<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L27">index.ts:27</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Checks if <em>text</em> is a hex color code</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Input text</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="istelephonenumber" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Telephone<wbr>Number</h3>
@@ -2508,7 +2673,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/8e1ee3b/src/index.ts#L10">index.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L10">index.ts:10</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2541,7 +2706,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/8e1ee3b/src/index.ts#L31">index.ts:31</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/585fc7d/src/index.ts#L52">index.ts:52</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
