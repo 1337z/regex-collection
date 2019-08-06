@@ -10,9 +10,10 @@
 Currently using `67` tests for `6` functions to ensure accurate results!
 
 ## Supported patterns for:
-- Hex color codes
-- Telephone numbers
 - Email addresses
+- Hex color codes
+- IP addresses
+- Telephone numbers
 
 #### [Documentation](https://1337z.github.io/regex-collection/)
 
