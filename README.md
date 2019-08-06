@@ -48,7 +48,7 @@ let result = search.getEmailAddress(text)
 // => ["contact@example.com", "hello@world.com"]
 ```
 
-#### `is` check if a string matches to a regex
+#### `is` Check if a string matches to a regex
 ```javascript
 const text = "Hello World contact@example.com Bye World hello@world.com"
 
