@@ -9,6 +9,13 @@
 
 Currently using `44` tests for `4` functions to ensure accurate results!
 
+## Supported patterns for:
+- Hex color codes
+- Telephone numbers
+- Email addresses
+
+---
+
 ## Install
 
 ```
@@ -19,6 +26,7 @@ npm i regex-collection
 ### [Documentation](https://1337z.github.io/regex-collection/)
 
 ### Importing
+---
 #### Javascript
 ```javascript
 const search = require('regex-collection')
@@ -31,6 +39,7 @@ import * as search from 'regex-collection'
 
 ### Syntax
 > The syntax is the same for JavaScript and TypeScript
+---
 
 #### Get
 ```javascript
@@ -54,8 +63,3 @@ const text = "contact@example.com"
 let result = search.isEmailAddress(text)
 // => true
 ```
-
-## Supported patterns for:
-- Hex color codes
-- Telephone numbers
-- Email addresses
