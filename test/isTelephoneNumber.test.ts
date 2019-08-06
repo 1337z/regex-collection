@@ -43,3 +43,9 @@ test("+31636363634", () => {
 test("075-63546725", () => {
   expect(search.isTelephoneNumber("075-63546725")).toBe(true)
 })
+
+// Telephone number between text
+
+test("(123) 456-7890", () => {
+  expect(search.isTelephoneNumber("abc (123) 456-7890 abc")).toBe(false)
+})

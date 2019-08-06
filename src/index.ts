@@ -7,17 +7,42 @@ export const telephoneNumber = /[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-
  * Checks if *text* is a telephone number.
  * @param text Input text
  */
-export const isTelephoneNumber = (text: string) => modify(telephoneNumber, "i").test(text);
+export const isTelephoneNumber = (text: string) => is(text, telephoneNumber, "i")
 
 /**
  * Gets all telephone numbers from *text*
  * @param text Input text
  */
-export const getTelephoneNumber = (text: string) => text.match(modify(telephoneNumber, "ig"))
+export const getTelephoneNumber = (text: string) => get(text, telephoneNumber, "ig")
+
+/**
+ * Matches hex color codes like #fff | #ffffff
+ */
+export const hexColor = /#?([a-f0-9]{6}|[a-f0-9]{3})/
+
+/**
+ * Checks if *text* is a hex color code
+ * @param text Input text
+ */
+export const isHexColor = (text: string) => is(text, hexColor, "i")
+
+/**
+ * Gets all hex color codes from *text*
+ * @param text Input text
+ */
+export const getHexColor = (text: string) => get(text, hexColor, "ig")
 
 
 
 
+function is(text: string, regex: RegExp, flags: string = "") {
+  // console.log(new RegExp("^" + regex.toString() + "$", flags))
+  return new RegExp("^" + regex.toString().substring(1, regex.toString().length - 1) + "$", flags).test(text)
+}
+
+function get(text: string, regex: RegExp, flags: string = "") {
+  return text.match(new RegExp(regex, flags))
+}
 
 /**
  * Adds flags to a regex
@@ -25,5 +50,5 @@ export const getTelephoneNumber = (text: string) => text.match(modify(telephoneN
  * @param flags The flags that will be added to the regex
  */
 export function modify(regex: RegExp, flags: string) {
-  return new RegExp(telephoneNumber, flags)
+  return new RegExp(regex, flags)
 }
