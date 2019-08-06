@@ -1,10 +1,13 @@
-# REGEX-COLLECTION
+<h1 align="center"> REGEX-COLLECTION </h1>
+<p align="center"> 
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT license">
+</p>
+
+
 
 > Useful regex patterns and functions to test them.
 
 Currently using `44` tests for `4` functions to ensure accurate results!
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Install
 
