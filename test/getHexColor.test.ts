@@ -33,3 +33,13 @@ test("asd #fff asd", () => {
 test("asd #ffffff asd", () => {
   expect(search.getHexColor("asd #ffffff asd")).toStrictEqual(["#ffffff"])
 })
+
+// Multiple hex color codes in text
+
+test("asd #fff asd", () => {
+  expect(search.getHexColor("asd #fff asd #000000")).toStrictEqual(["#fff", "#000000"])
+})
+
+test("asd #ffffff asd", () => {
+  expect(search.getHexColor("asd #ffffff asd #000")).toStrictEqual(["#ffffff", "#000"])
+})
