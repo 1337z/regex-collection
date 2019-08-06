@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "doc": "typedoc --mode file --theme minimal"
+    "doc": "typedoc --mode file --theme minimal",
+    "build": "tsc && npm run doc && npm test"
   },
   "repository": {
     "type": "git",
