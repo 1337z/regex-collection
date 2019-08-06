@@ -7,7 +7,7 @@
 
 > Useful regex patterns and functions to test them.
 
-Currently using `44` tests for `4` functions to ensure accurate results!
+Currently using `67` tests for `6` functions to ensure accurate results!
 
 ## Supported patterns for:
 - Hex color codes
