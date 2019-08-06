@@ -26,10 +26,10 @@ test("#464f4a", () => {
 
 // Hex color codes in text
 
-test("#fff", () => {
+test("asd #fff asd", () => {
   expect(search.getHexColor("asd #fff asd")).toStrictEqual(["#fff"])
 })
 
-test("#ffffff", () => {
+test("asd #ffffff asd", () => {
   expect(search.getHexColor("asd #ffffff asd")).toStrictEqual(["#ffffff"])
 })
