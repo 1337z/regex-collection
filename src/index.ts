@@ -64,7 +64,7 @@ export const isIpAddress = (text: string) => is(text, ipAddress, "i")
  * Gets all IP addresses from *text*
  * @param text Input text
  */
-export const getIpAddress = (text: string) => get(text, ipAddress, "i")
+export const getIpAddress = (text: string) => get(text, ipAddress, "ig")
 
 
 
