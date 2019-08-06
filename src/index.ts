@@ -58,7 +58,6 @@ export const getEmailAddress = (text: string) => get(text, emailAddress, "ig")
  * @param flags The flags that will be added to the regex
  */
 function is(text: string, regex: RegExp, flags: string = "") {
-  // console.log(new RegExp("^" + regex.toString() + "$", flags))
   return new RegExp("^" + regex.toString().substring(1, regex.toString().length - 1) + "$", flags).test(text)
 }
 
