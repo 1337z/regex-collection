@@ -1,4 +1,8 @@
-# REGEX-COLLECTION
+<p align="center"> 
+<h1 align="center"> REGEX-COLLECTION </h1>
+</p>
+
+
 
 > Useful regex patterns and functions to test them.
 
