@@ -18,7 +18,7 @@ export const getTelephoneNumber = (text: string) => get(text, telephoneNumber, "
 /**
  * Matches hex color codes like #fff | #ffffff
  */
-export const hexColor = /#?([a-f0-9]{6}|[a-f0-9]{3})/
+export const hexColor = /#([a-f0-9]{6}|[a-f0-9]{3})/
 
 /**
  * Checks if *text* is a hex color code
