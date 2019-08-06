@@ -49,6 +49,23 @@ export const isEmailAddress = (text: string) => is(text, emailAddress, "i")
  */
 export const getEmailAddress = (text: string) => get(text, emailAddress, "ig")
 
+/**
+ * Matches IP addresses
+ */
+export const ipAddress = /((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*/
+
+/**
+ * Checks if *text* is an IP address
+ * @param text Input text
+ */
+export const isIpAddress = (text: string) => is(text, ipAddress, "i")
+
+/**
+ * Gets all IP addresses from *text*
+ * @param text Input text
+ */
+export const getIpAddress = (text: string) => get(text, ipAddress, "i")
+
 
 
 /**
