@@ -2,6 +2,8 @@
 
 > Useful regex patterns and functions to test them.
 
+Currently using `35` tests for `3` functions to ensure accurate results!
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Install
