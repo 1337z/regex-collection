@@ -14,6 +14,8 @@ Currently using `44` tests for `4` functions to ensure accurate results!
 - Telephone numbers
 - Email addresses
 
+#### [Documentation](https://1337z.github.io/regex-collection/)
+
 ---
 
 ## Install
@@ -23,10 +25,8 @@ npm i regex-collection
 ```
 
 ## Usage
-### [Documentation](https://1337z.github.io/regex-collection/)
 
 ### Importing
----
 #### Javascript
 ```javascript
 const search = require('regex-collection')
@@ -39,9 +39,8 @@ import * as search from 'regex-collection'
 
 ### Syntax
 > The syntax is the same for JavaScript and TypeScript
----
 
-#### Get
+#### `get` Get all occurrences of regex
 ```javascript
 const text = "Hello World contact@example.com Bye World hello@world.com"
 
@@ -49,7 +48,7 @@ let result = search.getEmailAddress(text)
 // => ["contact@example.com", "hello@world.com"]
 ```
 
-#### Is
+#### `is` check if a string matches to a regex
 ```javascript
 const text = "Hello World contact@example.com Bye World hello@world.com"
 
