@@ -2420,6 +2420,18 @@ img {
 				<p>Useful regex patterns and functions to test them.</p>
 			</blockquote>
 			<p>Currently using <code>44</code> tests for <code>4</code> functions to ensure accurate results!</p>
+			<a href="#supported-patterns-for" id="supported-patterns-for" style="color: inherit; text-decoration: none;">
+				<h2>Supported patterns for:</h2>
+			</a>
+			<ul>
+				<li>Hex color codes</li>
+				<li>Telephone numbers</li>
+				<li>Email addresses</li>
+			</ul>
+			<a href="#a-hrefhttps1337zgithubioregex-collectiondocumentationa" id="a-hrefhttps1337zgithubioregex-collectiondocumentationa" style="color: inherit; text-decoration: none;">
+				<h4><a href="https://1337z.github.io/regex-collection/">Documentation</a></h4>
+			</a>
+			<hr>
 			<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 				<h2>Install</h2>
 			</a>
@@ -2427,25 +2439,41 @@ img {
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
 			</a>
-			<a href="#a-hrefhttps1337zgithubioregex-collectiondocumentationa" id="a-hrefhttps1337zgithubioregex-collectiondocumentationa" style="color: inherit; text-decoration: none;">
-				<h3><a href="https://1337z.github.io/regex-collection/">Documentation</a></h3>
+			<a href="#importing" id="importing" style="color: inherit; text-decoration: none;">
+				<h3>Importing</h3>
 			</a>
 			<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
-				<h3>Javascript</h3>
+				<h4>JavaScript</h4>
 			</a>
 			<pre><code class="language-javascript"><span class="hljs-keyword">const</span> search = <span class="hljs-built_in">require</span>(<span class="hljs-string">'regex-collection'</span>)</code></pre>
 			<a href="#typescript" id="typescript" style="color: inherit; text-decoration: none;">
-				<h3>TypeScript</h3>
+				<h4>TypeScript</h4>
 			</a>
 			<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> search <span class="hljs-keyword">from</span> <span class="hljs-string">'regex-collection'</span></code></pre>
-			<a href="#supported-patterns-for" id="supported-patterns-for" style="color: inherit; text-decoration: none;">
-				<h2>Supported patterns for:</h2>
+			<a href="#syntax" id="syntax" style="color: inherit; text-decoration: none;">
+				<h3>Syntax</h3>
 			</a>
-			<ul>
-				<li>Hex color codes</li>
-				<li>Telephone numbers</li>
-				<li>Email address</li>
-			</ul>
+			<blockquote>
+				<p>The syntax is the same for JavaScript and TypeScript</p>
+			</blockquote>
+			<a href="#codegetcode-get-all-occurrences-of-regex" id="codegetcode-get-all-occurrences-of-regex" style="color: inherit; text-decoration: none;">
+				<h4><code>get</code> Get all occurrences of regex</h4>
+			</a>
+			<pre><code class="language-javascript"><span class="hljs-keyword">const</span> text = <span class="hljs-string">"Hello World contact@example.com Bye World hello@world.com"</span>
+
+<span class="hljs-keyword">let</span> result = search.getEmailAddress(text)
+<span class="hljs-comment">// =&gt; ["contact@example.com", "hello@world.com"]</span></code></pre>
+			<a href="#codeiscode-check-if-a-string-matches-to-a-regex" id="codeiscode-check-if-a-string-matches-to-a-regex" style="color: inherit; text-decoration: none;">
+				<h4><code>is</code> Check if a string matches to a regex</h4>
+			</a>
+			<pre><code class="language-javascript"><span class="hljs-keyword">const</span> text = <span class="hljs-string">"Hello World contact@example.com Bye World hello@world.com"</span>
+
+<span class="hljs-keyword">let</span> result = search.isEmailAddress(text)
+<span class="hljs-comment">// =&gt; false</span></code></pre>
+			<pre><code class="language-javascript"><span class="hljs-keyword">const</span> text = <span class="hljs-string">"contact@example.com"</span>
+
+<span class="hljs-keyword">let</span> result = search.isEmailAddress(text)
+<span class="hljs-comment">// =&gt; true</span></code></pre>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
@@ -2483,7 +2511,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">email<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/(?:[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+(?:\.[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L35">index.ts:35</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L35">index.ts:35</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2493,7 +2521,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">hex<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/#([a-f0-9]{6}|[a-f0-9]{3})/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L21">index.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L21">index.ts:21</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2508,7 +2536,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">telephone<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L4">index.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L4">index.ts:4</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2530,7 +2558,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L39">index.ts:39</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L39">index.ts:39</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2556,7 +2584,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L33">index.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L33">index.ts:33</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2592,7 +2620,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L16">index.ts:16</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L16">index.ts:16</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2628,7 +2656,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L37">index.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L37">index.ts:37</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2651,7 +2679,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L27">index.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L27">index.ts:27</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2684,7 +2712,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L10">index.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L10">index.ts:10</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2717,7 +2745,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/add4a7f/src/index.ts#L69">index.ts:69</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/031a312/src/index.ts#L69">index.ts:69</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
