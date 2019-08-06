@@ -19,10 +19,6 @@ export const getTelephoneNumber = (text: string) => text.match(modify(telephoneN
 
 
 
-
-
-
-
 /**
  * Adds flags to a regex
  * @param regex A valid regex (Can be a variable from this module)
