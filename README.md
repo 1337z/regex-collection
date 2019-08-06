@@ -7,7 +7,7 @@
 
 > Useful regex patterns and functions to test them.
 
-Currently using `87` tests for `8` functions to ensure accurate results!
+Currently using `134` tests for `4` functions to ensure accurate results!
 
 ## Supported patterns for:
 - Email addresses
