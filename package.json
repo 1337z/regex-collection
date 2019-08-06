@@ -1,7 +1,7 @@
 {
   "name": "regex-collection",
   "version": "0.0.3",
-  "description": "Useful regex patterns",
+  "description": "Useful regex patterns and functions to test them.",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest"
