@@ -81,13 +81,13 @@ test("asd 075-63546725 asd", () => {
 // Multiple telephone numbers in text
 
 test("asd 1234567890 asd +31636363634", () => {
-  expect(search.getTelephoneNumber("asd 1234567890 asd")).toStrictEqual(["1234567890", "+31636363634"])
+  expect(search.getTelephoneNumber("asd 1234567890 asd +31636363634")).toStrictEqual(["1234567890", "+31636363634"])
 })
 
 test("asd +31636363634 asd 075-63546725", () => {
-  expect(search.getTelephoneNumber("asd +31636363634 asd")).toStrictEqual(["+31636363634", "075-63546725"])
+  expect(search.getTelephoneNumber("asd +31636363634 asd 075-63546725")).toStrictEqual(["+31636363634", "075-63546725"])
 })
 
 test("asd 075-63546725 asd 1234567890", () => {
-  expect(search.getTelephoneNumber("asd 075-63546725 asd")).toStrictEqual(["075-63546725", "1234567890"])
+  expect(search.getTelephoneNumber("asd 075-63546725 asd 1234567890")).toStrictEqual(["075-63546725", "1234567890"])
 })
