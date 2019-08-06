@@ -11,7 +11,7 @@ npm i regex-collection
 ```
 
 ## Usage
-
+### [Documentation](https://1337z.github.io/regex-collection/)
 ### Javascript
 ```javascript
 const search = require('regex-collection')
