@@ -30,3 +30,4 @@ import * as search from 'regex-collection'
 ## Supported patterns for:
 - Hex color codes
 - Telephone numbers
+- Email address
