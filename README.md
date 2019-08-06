@@ -17,17 +17,45 @@ npm i regex-collection
 
 ## Usage
 ### [Documentation](https://1337z.github.io/regex-collection/)
-### Javascript
+
+### Importing
+#### Javascript
 ```javascript
 const search = require('regex-collection')
 ```
 
-### TypeScript
+#### TypeScript
 ```typescript
 import * as search from 'regex-collection'
+```
+
+### Syntax
+> The syntax is the same for JavaScript and TypeScript
+
+#### Get
+```javascript
+const text = "Hello World contact@example.com Bye World hello@world.com"
+
+let result = search.getEmailAddress(text)
+// => ["contact@example.com", "hello@world.com"]
+```
+
+#### Is
+```javascript
+const text = "Hello World contact@example.com Bye World hello@world.com"
+
+let result = search.isEmailAddress(text)
+// => false
+```
+
+```javascript
+const text = "contact@example.com"
+
+let result = search.isEmailAddress(text)
+// => true
 ```
 
 ## Supported patterns for:
 - Hex color codes
 - Telephone numbers
-- Email address
+- Email addresses
