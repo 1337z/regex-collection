@@ -27,7 +27,7 @@ npm i regex-collection
 ## Usage
 
 ### Importing
-#### Javascript
+#### JavaScript
 ```javascript
 const search = require('regex-collection')
 ```
