@@ -2378,6 +2378,9 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-variable">
+			<a href="globals.html#csscomment" class="tsd-kind-icon">css<wbr>Comment</a>
+		</li>
+		<li class=" tsd-kind-variable">
 			<a href="globals.html#emailaddress" class="tsd-kind-icon">email<wbr>Address</a>
 		</li>
 		<li class=" tsd-kind-variable">
@@ -2390,6 +2393,9 @@ img {
 			<a href="globals.html#telephonenumber" class="tsd-kind-icon">telephone<wbr>Number</a>
 		</li>
 		<li class=" tsd-kind-function">
+			<a href="globals.html#getcsscomment" class="tsd-kind-icon">get<wbr>Css<wbr>Comment</a>
+		</li>
+		<li class=" tsd-kind-function">
 			<a href="globals.html#getemailaddress" class="tsd-kind-icon">get<wbr>Email<wbr>Address</a>
 		</li>
 		<li class=" tsd-kind-function">
@@ -2400,6 +2406,9 @@ img {
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#gettelephonenumber" class="tsd-kind-icon">get<wbr>Telephone<wbr>Number</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#iscsscomment" class="tsd-kind-icon">is<wbr>Css<wbr>Comment</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#isemailaddress" class="tsd-kind-icon">is<wbr>Email<wbr>Address</a>
@@ -2428,11 +2437,12 @@ img {
 			<blockquote>
 				<p>Useful regex patterns and functions to test them.</p>
 			</blockquote>
-			<p>Currently using <code>134</code> tests for <code>4</code> functions to ensure accurate results!</p>
+			<p>Currently using <code>154</code> tests for <code>5</code> functions to ensure accurate results!</p>
 			<a href="#supported-patterns-for" id="supported-patterns-for" style="color: inherit; text-decoration: none;">
 				<h2>Supported patterns for:</h2>
 			</a>
 			<ul>
+				<li>CSS comments</li>
 				<li>Email addresses</li>
 				<li>Hex color codes</li>
 				<li>IP addresses</li>
@@ -2493,6 +2503,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Variables</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-variable"><a href="globals.html#csscomment" class="tsd-kind-icon">css<wbr>Comment</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#emailaddress" class="tsd-kind-icon">email<wbr>Address</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#hexcolor" class="tsd-kind-icon">hex<wbr>Color</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#ipaddress" class="tsd-kind-icon">ip<wbr>Address</a></li>
@@ -2502,10 +2513,12 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function"><a href="globals.html#getcsscomment" class="tsd-kind-icon">get<wbr>Css<wbr>Comment</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#getemailaddress" class="tsd-kind-icon">get<wbr>Email<wbr>Address</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#gethexcolor" class="tsd-kind-icon">get<wbr>Hex<wbr>Color</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#getipaddress" class="tsd-kind-icon">get<wbr>IpAddress</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#gettelephonenumber" class="tsd-kind-icon">get<wbr>Telephone<wbr>Number</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#iscsscomment" class="tsd-kind-icon">is<wbr>Css<wbr>Comment</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#isemailaddress" class="tsd-kind-icon">is<wbr>Email<wbr>Address</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#ishexcolor" class="tsd-kind-icon">is<wbr>Hex<wbr>Color</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#isipaddress" class="tsd-kind-icon">is<wbr>IpAddress</a></li>
@@ -2519,12 +2532,27 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Variables</h2>
 			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="csscomment" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> css<wbr>Comment</h3>
+				<div class="tsd-signature tsd-kind-icon">css<wbr>Comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/\/\*[^*]*\*+([^\/*][^*]*\*+)*\//</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L72">index.ts:72</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Matches CSS comments</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
 				<a name="emailaddress" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> email<wbr>Address</h3>
 				<div class="tsd-signature tsd-kind-icon">email<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/(?:[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+(?:\.[a-z0-9!#$%&amp;&#x27;*+/&#x3D;?^_&#x60;{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L38">index.ts:38</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L38">index.ts:38</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2539,7 +2567,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">hex<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/#([a-f0-9]{6}|[a-f0-9]{3})/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L21">index.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L21">index.ts:21</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2554,7 +2582,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">ip<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L55">index.ts:55</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L55">index.ts:55</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2569,7 +2597,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">telephone<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/[\(\+]?\b[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\b/</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L4">index.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L4">index.ts:4</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2582,6 +2610,42 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="getcsscomment" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Css<wbr>Comment</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Css<wbr>Comment<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExpMatchArray</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L84">index.ts:84</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Gets all CSS comments from <em>text</em></p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Input text</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span>
+							<span class="tsd-signature-symbol"> | </span>
+							<span class="tsd-signature-type">RegExpMatchArray</span>
+						</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="getemailaddress" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Email<wbr>Address</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -2591,7 +2655,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L50">index.ts:50</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L50">index.ts:50</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2627,7 +2691,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L33">index.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L33">index.ts:33</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2663,7 +2727,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L67">index.ts:67</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L67">index.ts:67</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2699,7 +2763,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L16">index.ts:16</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L16">index.ts:16</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2726,6 +2790,39 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="iscsscomment" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Css<wbr>Comment</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Css<wbr>Comment<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L78">index.ts:78</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Checks if <em>text</em> is an CSS comment</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>text: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Input text</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="isemailaddress" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Email<wbr>Address</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -2735,7 +2832,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L44">index.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L44">index.ts:44</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2768,7 +2865,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L27">index.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L27">index.ts:27</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2801,7 +2898,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L61">index.ts:61</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L61">index.ts:61</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2834,7 +2931,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L10">index.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L10">index.ts:10</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2867,7 +2964,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/326baf8/src/index.ts#L96">index.ts:96</a></li>
+								<li>Defined in <a href="https://github.com/1337z/regex-collection/blob/4aa697b/src/index.ts#L113">index.ts:113</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

@@ -66,10 +66,21 @@ export const isIpAddress = (text: string) => is(text, ipAddress, "i")
  */
 export const getIpAddress = (text: string) => get(text, ipAddress, "ig")
 
+/**
+ * Matches CSS comments
+ */
 export const cssComment = /\/\*[^*]*\*+([^\/*][^*]*\*+)*\//
 
+/**
+ * Checks if *text* is an CSS comment
+ * @param text Input text
+ */
 export const isCssComment = (text: string) => is(text, cssComment, "i")
 
+/**
+ * Gets all CSS comments from *text*
+ * @param text Input text
+ */
 export const getCssComment = (text: string) => get(text, cssComment, "ig")
 
 
