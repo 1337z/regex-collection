@@ -7,11 +7,14 @@
 
 > Useful regex patterns and functions to test them.
 
-Currently using `154` tests for `5` functions to ensure accurate results!
+Currently using `266` tests for `8` functions to ensure accurate results!
 
 ## Supported patterns for:
 - CSS comments
 - Email addresses
+- Full numbers / Integer
+- Full numbers / Integer (Negative)
+- Full numbers / Integer (Positive)
 - Hex color codes
 - IP addresses
 - Telephone numbers
