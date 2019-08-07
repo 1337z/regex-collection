@@ -9,7 +9,7 @@
 
 Currently using `266` tests for `8` functions to ensure accurate results!
 
-## Supported patterns for:
+## :white_check_mark: Supported patterns for:
 - CSS comments
 - Email addresses
 - Full numbers / Integer
@@ -19,17 +19,17 @@ Currently using `266` tests for `8` functions to ensure accurate results!
 - IP addresses
 - Telephone numbers
 
-#### [Documentation](https://1337z.github.io/regex-collection/)
+#### [Documentation :clipboard:](https://1337z.github.io/regex-collection/)
 
 ---
 
-## Install
+## :package: Install
 
 ```
 npm i regex-collection
 ```
 
-## Usage
+## :clipboard: Usage
 
 ### Importing
 #### JavaScript
