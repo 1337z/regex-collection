@@ -1,4 +1,6 @@
+<p align="center"> 
 <h1 align="center"> REGEX-COLLECTION </h1>
+</p>
 <p align="center"> 
   <img alt="NPM" src="https://img.shields.io/npm/l/regex-collection?style=flat-square">
   <img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/1337z/regex-collection?style=flat-square">
