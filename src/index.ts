@@ -41,7 +41,7 @@ export const emailAddress = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+
  * Checks if *text* is an email address
  * @param text Input text
  */
-export const isEmailAddress = (text: string) => is(text, emailAddress, "i") 
+export const isEmailAddress = (text: string) => is(text, emailAddress, "i")
 
 /**
  * Gets all email addresses from *text*
