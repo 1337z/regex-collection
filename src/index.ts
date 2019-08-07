@@ -117,6 +117,23 @@ export const isPositiveFullNumber = (text: string) => is(text, positiveFullNumbe
  */
 export const getPositiveFullNumber = (text: string) => get(text, positiveFullNumber, "ig")
 
+/**
+ * Matches a positive full number / integer (1 | 2 | +3 | 1337)
+ */
+export const negativeFullNumber = /(?<=\s|^)\-\d+(?=\s|$)/
+
+/**
+ * Checks if *text* is a positive full number
+ * @param text Input text
+ */
+export const isNegativeFullNumber = (text: string) => is(text, negativeFullNumber, "i")
+
+/**
+ * Gets all positive full numbers from *text*
+ * @param text Input text
+ */
+export const getNegativeFullNumber = (text: string) => get(text, negativeFullNumber, "ig")
+
 
 
 /**
