@@ -58,13 +58,13 @@ export const ipv4Address = /\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(
  * Checks if *text* is an IP address
  * @param text Input text
  */
-export const isIpv4Address = (text: string) => is(text, ipAddress, "i")
+export const isIpv4Address = (text: string) => is(text, ipv4Address, "i")
 
 /**
  * Gets all IP addresses from *text*
  * @param text Input text
  */
-export const getIpv4Address = (text: string) => get(text, ipAddress, "ig")
+export const getIpv4Address = (text: string) => get(text, ipv4Address, "ig")
 
 /**
  * Matches CSS comments
