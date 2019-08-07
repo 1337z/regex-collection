@@ -83,6 +83,23 @@ export const isCssComment = (text: string) => is(text, cssComment, "i")
  */
 export const getCssComment = (text: string) => get(text, cssComment, "ig")
 
+/**
+ * Matches a full number / integer (1 | 2 | 3 | 1337)
+ */
+export const fullNumber = /(?<=\s|^|\s\+|\s\-)[+-]?\d+(?=\s|$)/
+
+/**
+ * Checks if *text* is a full number
+ * @param text Input text
+ */
+export const isFullNumber = (text: string) => is(text, fullNumber, "i")
+
+/**
+ * Gets all full numbers from *text*
+ * @param text Input text
+ */
+export const getFullNumber = (text: string) => get(text, fullNumber, "ig")
+
 
 
 /**
