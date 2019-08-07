@@ -14,7 +14,7 @@
 
 > Useful regex patterns and functions to test them.
 
-Currently using `266` tests for `8` functions to ensure accurate results!
+Currently using `268` tests for `9` functions to ensure accurate results!
 
 ## :white_check_mark: Supported patterns for:
 - CSS comments
