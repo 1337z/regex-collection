@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "doc": "typedoc --mode file --theme minimal",
-    "build": "tsc && npm run doc && npm test"
+    "build": "tsc && npm run doc && npm test",
+    "debug": "jest --verbose"
   },
   "repository": {
     "type": "git",
