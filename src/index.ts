@@ -66,6 +66,12 @@ export const isIpAddress = (text: string) => is(text, ipAddress, "i")
  */
 export const getIpAddress = (text: string) => get(text, ipAddress, "ig")
 
+export const cssComment = /\/\*[^*]*\*+([^\/*][^*]*\*+)*\//
+
+export const isCssComment = (text: string) => is(text, cssComment, "i")
+
+export const getCssComment = (text: string) => get(text, cssComment, "ig")
+
 
 
 /**
