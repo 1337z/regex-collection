@@ -1,6 +1,11 @@
 <h1 align="center"> REGEX-COLLECTION </h1>
 <p align="center"> 
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT license">
+  <img alt="NPM" src="https://img.shields.io/npm/l/regex-collection?style=flat-square">
+  <img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/1337z/regex-collection?style=flat-square">
+  <img alt="Travis (.org)" src="https://img.shields.io/travis/1337z/regex-collection?style=flat-square">
+  <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/1337z/regex-collection?style=flat-square">
+  <img alt="npm" src="https://img.shields.io/npm/dt/regex-collection?style=flat-square">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/regex-collection?style=flat-square">
 </p>
 
 
