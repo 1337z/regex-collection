@@ -52,19 +52,19 @@ export const getEmailAddress = (text: string) => get(text, emailAddress, "ig")
 /**
  * Matches IP addresses
  */
-export const ipAddress = /\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/
+export const ipv4Address = /\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/
 
 /**
  * Checks if *text* is an IP address
  * @param text Input text
  */
-export const isIpAddress = (text: string) => is(text, ipAddress, "i")
+export const isIpv4Address = (text: string) => is(text, ipAddress, "i")
 
 /**
  * Gets all IP addresses from *text*
  * @param text Input text
  */
-export const getIpAddress = (text: string) => get(text, ipAddress, "ig")
+export const getIpv4Address = (text: string) => get(text, ipAddress, "ig")
 
 /**
  * Matches CSS comments
